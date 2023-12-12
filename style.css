@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: teal;
+  color: white;
+  padding: 10px 20px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right a {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+}
+
+.column {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.text {
+  text-align: center;
+  color: #000;
+}
+
+h2 {
+  color: #333;
+}
+
+.portfolio {
+  background-image: url(/images/Recentpicme.jpg); 
+  background-size: cover;
+  background-position: center;
+  width: 300px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  border-radius: 10px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.page-section {
+  padding: 50px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+ .nav {
+  flex-direction: column;
+ }
+ 
+  header {
+    flex-direction: column;
+  }
+
+  main{
+    max-width: 1200px;
+  }
+}
